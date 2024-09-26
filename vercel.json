@@ -3,8 +3,14 @@
   "installCommand": "npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "rewrites": [{
-    "source":"/(.*)",
-    "destination":"/api"
-  }]
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/:username",
+      "destination": "/index.html"
+    }
+  ]
 }
