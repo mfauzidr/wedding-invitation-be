@@ -21,7 +21,8 @@ export interface IInviteeResponse extends IBasicResponse {
 }
 
 export interface IAttendanceResponse extends IBasicResponse {
-  results?: IAttendance[]
+  results?: IAttendance[];
+  attendanceSummary?: { hadir: number, tidakHadir: number, masihRagu: number }; // New field for summary
 }
 
 
